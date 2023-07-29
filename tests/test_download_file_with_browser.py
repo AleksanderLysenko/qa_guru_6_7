@@ -28,3 +28,5 @@ def test_download_with_browser():
     time.sleep(5)
 
     assert os.path.exists(os.path.join(tmp_path, 'pytest-main.zip'))
+
+    os.remove(os.path.join(tmp_path, 'pytest-main.zip'))

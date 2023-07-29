@@ -19,3 +19,6 @@ def test_download_with_request():
     size = os.path.getsize(os.path.join(tmp_path, 'selenium_logo.png'))
 
     assert size == 30803
+
+    os.remove(os.path.join(tmp_path, 'selenium_logo.png'))
+

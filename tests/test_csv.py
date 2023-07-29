@@ -20,3 +20,6 @@ def test_read_row_csv():
         for row in csvreader:
             print(row)
     assert len(row) == 3
+
+    os.remove(os.path.join(resources_path, 'eggs.csv'))
+
